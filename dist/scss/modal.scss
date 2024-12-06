@@ -1,0 +1,579 @@
+@font-face {
+  font-family: markReg;
+  src: url(../fonts/MarkOT-Medium.ttf);
+}
+$MarkBold: "MarkOT-Bold", sans-serif;
+$MarkBook: "MarkOT-Book", sans-serif;
+$MarkItal: "MarkOT-Italic", sans-serif;
+$MarkLight: "MarkOT-Light", sans-serif;
+$MarkMedium: "MarkOT-Medium", sans-serif;
+$MarkReg: "MarkOT-Reg", sans-serif;
+
+$base: #ece9e4;
+$yellow: #f1be48;
+$red: #c8102e;
+$brown: #5a0000;
+$darkbrown: #250000;
+$blue: #2f3c4a;
+$text-green: #095436;
+
+//button colors
+$silver: #a3a7a8;
+$gold: #c4b8aa;
+$slate: #676260;
+
+$black: #333333;
+$vin-red: #bb3a56;
+$oasis: #a4cfd3;
+$sandstone: #ddc7a5;
+$navy: #32425e;
+$white: #f3f3f3;
+$gray: #a9a9a6;
+$green: #a8bba2;
+$rose: #ffe7e8;
+$red-btn: #ff0000;
+$evergreen: #405545;
+
+#modal-inject {
+  position: fixed;
+  background-color: rgba($color: #a3a3a3, $alpha: 0.5);
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: none;
+  justify-content: center;
+  font-family: markReg;
+  z-index: 99;
+  #modal-background {
+    position: absolute;
+    background-color: rgba($color: #fff, $alpha: 0);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .modal-wrapper {
+    right: 130px;
+    top: 74px;
+    width: 345px;
+    min-height: 630px;
+    border-radius: 10px;
+    font-family: markReg;
+    background-color: #fff;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    .modal-pointer {
+      -webkit-clip-path: polygon(50% 25%, 0% 100%, 100% 100%);
+      clip-path: polygon(50% 25%, 0% 100%, 100% 100%);
+      background-color: #fff;
+      width: 20px;
+      height: 20px;
+      margin-top: -13%;
+      margin-left: 106%;
+    }
+    .x-button {
+      cursor: pointer;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: #151515;
+      font-family: markReg;
+      width: 32px;
+      height: 32px;
+      left: 0;
+      margin-left: 25px;
+      margin-top: 5px;
+      border-radius: 5px;
+      &:hover {
+        color: #000000;
+      }
+    }
+    .modal-content {
+      margin-top: 60px;
+      color: #eeeeee;
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+      font-family: markReg;
+      .login-signup-btns {
+        width: 90%;
+        margin-left: 156px;
+        .loginToggle {
+          width: 27%;
+          height: 45px;
+          margin-right: -2px;
+          border: none;
+          background-color: rgba($color: #000, $alpha: 0);
+          font-family: $MarkBold;
+          font-size: 18px;
+          color: #3b2b2f;
+          cursor: pointer;
+          &:focus,
+          &:active,
+          &:hover {
+            background-color: #ece9e4;
+          }
+        }
+        .signupToggle {
+          width: 27%;
+          height: 45px;
+          margin-left: -2px;
+          border: none;
+          background-color: rgba($color: #000, $alpha: 0);
+          font-family: $MarkBold;
+          font-size: 18px;
+          color: #3b2b2f;
+          cursor: pointer;
+
+          &:focus,
+          &:active,
+          &:hover {
+            background-color: #ece9e4;
+          }
+        }
+      }
+      input {
+        width: 300px;
+        height: 40px;
+        border-radius: 3px;
+        border: 2px solid #acacac;
+        font-family: $MarkReg;
+        font-size: 16px;
+        padding: 13px;
+        margin-top: 10px;
+        background-color: #fff;
+        color: #000;
+        margin-left: 154px;
+      }
+      .sign-titles {
+        font-family: $MarkMedium;
+        font-size: 28px;
+        margin-bottom: 16px;
+        text-align: center;
+      }
+      .remember-box {
+        display: flex;
+        align-items: center;
+        width: 400px;
+        margin-top: 0px;
+        input {
+          height: 22px;
+          width: 22px;
+          padding: 2px;
+          border: 4px solid #c8c8c8;
+          border-radius: 0px;
+          margin-top: 5px;
+        }
+        p {
+          color: #000;
+          margin-top: 20px;
+          margin-left: 10px;
+          font-size: 13px;
+        }
+      }
+      a {
+        margin-left: 158px;
+        margin-top: 14px;
+        text-decoration: underline;
+        font-size: 14px;
+        color: #0f7db5;
+        cursor: pointer;
+        &:hover {
+          color: #0c6591;
+        }
+      }
+      .why-sign-in {
+        width: 345px;
+        height: 147px;
+        background-color: #f3f3f3;
+        margin-left: 131px;
+        margin-top: 16px;
+        overflow: hidden;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+          font-size: 16px;
+          margin-top: 10px;
+        }
+        p {
+          font-size: 14px;
+          margin-right: 60px;
+          margin-top: -2px;
+        }
+        li {
+          font-size: 14px;
+        }
+        ul {
+          margin-top: -10px;
+        }
+      }
+      .bottom-btns {
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 154px;
+        a {
+          width: 295px;
+          height: 44px;
+          border: 3px solid #d2d2d2;
+          text-decoration: none;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #000;
+          border-radius: 20px;
+          &:hover {
+            background-color: #f3f3f3;
+          }
+        }
+      }
+      .login-button {
+        width: 300px;
+        height: 06px;
+        background-color: #3b2b2f;
+        color: #fff;
+        font-family: $MarkMedium;
+        text-decoration: none;
+        font-size: 18px;
+        border-radius: 50px;
+        margin-top: 10px;
+        cursor: pointer;
+        text-align: center;
+        padding-bottom: 36px;
+        &:hover {
+          background-color: #2a1f22;
+        }
+      }
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        width: 420px;
+        height: 45px;
+        font-size: 14px;
+        background-color: #322ad4;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: $MarkBold;
+        &:hover {
+          background-color: #2a23a5;
+        }
+      }
+    }
+  }
+  .modal-wrapper2 {
+    right: 130px;
+    top: 74px;
+    width: 345px;
+    min-height: 630px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    .modal-pointer {
+      -webkit-clip-path: polygon(50% 25%, 0% 100%, 100% 100%);
+      clip-path: polygon(50% 25%, 0% 100%, 100% 100%);
+      background-color: #fff;
+      width: 20px;
+      height: 20px;
+      margin-top: -13%;
+      margin-left: 106%;
+    }
+    .x-button {
+      cursor: pointer;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: #151515;
+      font-family: $MarkBold;
+      width: 32px;
+      height: 32px;
+      left: 0;
+      margin-left: 25px;
+      margin-top: 5px;
+      border-radius: 5px;
+      &:hover {
+        color: #000000;
+      }
+    }
+    .modal-content {
+      margin-top: 60px;
+      color: #eeeeee;
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+      .login-signup-btns {
+        width: 90%;
+        margin-left: 156px;
+        .loginToggle {
+          width: 27%;
+          height: 45px;
+          margin-right: -2px;
+          border: none;
+          background-color: rgba($color: #000, $alpha: 0);
+          font-family: $MarkBold;
+          font-size: 18px;
+          color: #3b2b2f;
+          cursor: pointer;
+          &:focus,
+          &:active,
+          &:hover {
+            background-color: #ece9e4;
+          }
+        }
+        .signupToggle {
+          width: 27%;
+          height: 45px;
+          margin-left: -2px;
+          border: none;
+          background-color: rgba($color: #000, $alpha: 0);
+          font-family: $MarkBold;
+          font-size: 18px;
+          color: #3b2b2f;
+          cursor: pointer;
+
+          &:focus,
+          &:active,
+          &:hover {
+            background-color: #ece9e4;
+          }
+        }
+      }
+      input {
+        width: 300px;
+        height: 40px;
+        border-radius: 3px;
+        border: 2px solid #acacac;
+        font-family: $MarkReg;
+        font-size: 16px;
+        padding: 13px;
+        margin-top: 10px;
+        background-color: #fff;
+        color: #000;
+        margin-left: 154px;
+      }
+      .sign-titles {
+        font-family: $MarkMedium;
+        font-size: 28px;
+        margin-bottom: 16px;
+        text-align: center;
+      }
+      .remember-box {
+        display: flex;
+        align-items: center;
+        width: 400px;
+        margin-top: 0px;
+        input {
+          height: 22px;
+          width: 22px;
+          padding: 2px;
+          border: 4px solid #c8c8c8;
+          border-radius: 0px;
+          margin-top: 5px;
+        }
+        p {
+          color: #000;
+          margin-top: 20px;
+          margin-left: 10px;
+          font-size: 13px;
+        }
+      }
+      a {
+        margin-left: 158px;
+        margin-top: 14px;
+        text-decoration: underline;
+        font-size: 14px;
+        color: #0f7db5;
+        cursor: pointer;
+        &:hover {
+          color: #0c6591;
+        }
+      }
+      .why-sign-in {
+        width: 345px;
+        height: 147px;
+        background-color: #f3f3f3;
+        margin-left: 131px;
+        margin-top: 16px;
+        overflow: hidden;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+          font-size: 16px;
+          margin-top: 10px;
+        }
+        p {
+          font-size: 14px;
+          margin-right: 60px;
+          margin-top: -2px;
+        }
+        li {
+          font-size: 14px;
+        }
+        ul {
+          margin-top: -10px;
+        }
+      }
+      .bottom-btns {
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 154px;
+        a {
+          width: 295px;
+          height: 44px;
+          border: 3px solid #d2d2d2;
+          text-decoration: none;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #000;
+          border-radius: 20px;
+          &:hover {
+            background-color: #f3f3f3;
+          }
+        }
+      }
+      .login-button {
+        width: 300px;
+        height: 06px;
+        background-color: #3b2b2f;
+        color: #fff;
+        font-family: $MarkMedium;
+        text-decoration: none;
+        font-size: 18px;
+        border-radius: 50px;
+        margin-top: 10px;
+        cursor: pointer;
+        text-align: center;
+        padding-bottom: 36px;
+        &:hover {
+          background-color: #2a1f22;
+        }
+      }
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        width: 420px;
+        height: 45px;
+        font-size: 14px;
+        background-color: #322ad4;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: $MarkBold;
+        &:hover {
+          background-color: #2a23a5;
+        }
+      }
+    }
+  }
+  .modal-wrapper3 {
+    right: 130px;
+    top: 74px;
+    width: 345px;
+    min-height: 330px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    .modal-pointer {
+      -webkit-clip-path: polygon(50% 25%, 0% 100%, 100% 100%);
+      clip-path: polygon(50% 25%, 0% 100%, 100% 100%);
+      background-color: #fff;
+      width: 20px;
+      height: 20px;
+      margin-top: -13%;
+      margin-left: 106%;
+    }
+    .x-button {
+      cursor: pointer;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      color: #151515;
+      font-family: $MarkBold;
+      width: 32px;
+      height: 32px;
+      left: 0;
+      margin-left: 25px;
+      margin-top: 5px;
+      border-radius: 5px;
+      &:hover {
+        color: #000000;
+      }
+    }
+    .modal-content {
+      margin-top: 60px;
+      color: #eeeeee;
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+      .bottom-btns {
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        a {
+          width: 295px;
+          height: 44px;
+          border: 3px solid #d2d2d2;
+          text-decoration: none;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #000;
+          border-radius: 20px;
+          margin-bottom: 20px;
+          &:hover {
+            background-color: #f3f3f3;
+          }
+        }
+      }
+      .login-button {
+        background-color: #3b2b2f;
+        color: #fff;
+        font-family: $MarkMedium;
+        text-decoration: none;
+        font-size: 18px;
+        border-radius: 50px;
+        margin-top: 60px;
+        margin-bottom: 120px;
+        cursor: pointer;
+        text-align: center;
+        width: 300px;
+        height: 66px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          background-color: #2a1f22;
+        }
+      }
+    }
+  }
+}

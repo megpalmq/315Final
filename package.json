@@ -5,10 +5,19 @@
   "scripts": {
     "serve": "live-server dist",
     "build-webpack": "webpack",
-     "compile-sass": "sass dist/scss/styles.scss dist/css/styles.css -w --no-source-map"
+    "compile-sass": "sass dist/scss/styles.scss dist/css/styles.css -w --no-source-map"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "firebase": "^11.0.2",
+    "jquery": "^3.7.1",
+    "sass": "^1.82.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.97.1",
+    "webpack-cli": "^5.1.4"
+  }
 }

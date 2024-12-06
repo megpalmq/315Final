@@ -1,0 +1,57 @@
+@font-face {
+  font-family: markReg;
+  src: url(../fonts/MarkOT-Medium.ttf);
+}
+
+$base: #ece9e4;
+$yellow: #f1be48;
+$red: #c8102e;
+$brown: #5a0000;
+$darkbrown: #250000;
+$blue: #2f3c4a;
+$text-green: #095436;
+
+//button colors
+$silver: #a3a7a8;
+$gold: #c4b8aa;
+$slate: #676260;
+
+$black: #333333;
+$vin-red: #bb3a56;
+$oasis: #a4cfd3;
+$sandstone: #ddc7a5;
+$navy: #32425e;
+$white: #f3f3f3;
+$gray: #a9a9a6;
+$green: #a8bba2;
+$rose: #ffe7e8;
+$red-btn: #ff0000;
+$evergreen: #405545;
+
+.buttons-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 2.5rem;
+  font-family: markReg;
+  .button-link {
+    background-color: $base;
+    padding: 0.4rem 2.5rem 0.75rem 2.5rem;
+    margin: 0 0.625rem;
+    border-radius: 10px;
+    text-align: center;
+    a {
+      font-size: 12px;
+      text-decoration: none;
+      color: #000;
+    }
+    transition: ease 0.4s;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.05);
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}

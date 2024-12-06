@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>315 FINAL</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+        <div id="modal-inject">
+      <div id="modal-background" class="close"></div>
+      <div id="modal-wrap1" class="modal-wrapper">
+        <div class="x-button close">X</div>
+        <div class="modal-pointer">
+          
+        </div>
+        <div class="modal-content">
+          <div class="login-signup-btns">
+            <button class="loginToggle">LOG IN</button>
+            <button class="signupToggle">SIGN UP</button>
+
+          </div>
+          <form>
+          <input id="email" type="text" placeholder="Email*" required />
+          <input id="pw" type="password" placeholder="Password*" required />
+          <div class="remember-box">
+            <input type="checkbox">
+            <p>Keep me signed in.</p>
+          </div>
+          <input type="submit" value="SIGN IN" class="login-button" id="signIn"></input>
+        </form>
+         <div class="why-sign-in">
+          <h3>Why Sign Into Your Account?</h3>
+          <p>Signing in makes it easy to: </p>
+          <ul>
+            <li>Manage your account details</li>
+            <li>Check your order status</li>
+            <li>Track shipments and more</li>
+          </ul>
+         </div>
+         <div class="bottom-btns">
+          <a href="#">Register Coffee Maker</a>
+          <a href="#">Support</a>
+         </div>
+        </div>
+      </div>
+      <div id="modal-wrap2" class="modal-wrapper2">
+        <div class="x-button close">X</div>
+                <div class="modal-pointer">
+          
+        </div>
+        <div class="modal-content">
+          <div class="login-signup-btns">
+            <button class="loginToggle">LOG IN</button>
+            <button class="signupToggle">SIGN UP</button>
+
+          </div>
+          <form>
+            <input id="fName" type="text" placeholder="First Name*" required />
+            <input type="text" placeholder="Last Name*" required />
+          <input id="emailSignUp" type="text" placeholder="Email*" required />
+          <input id="pwSignUp" type="password" placeholder="Password*" required />
+          <div class="remember-box">
+            <input type="checkbox">
+            <p>Keep me signed in.</p>
+          </div>
+                    <div class="remember-box" style="margin-top: -14px;">
+            <input type="checkbox">
+            <p>Receive special offer emails</p>
+          </div>
+          <input type="submit" value="CREATE AN ACCOUNT" class="login-button" id="createAcctBtn"></input>
+        </form>
+         <div class="why-sign-in">
+          <h3>Why Sign Up?</h3>
+          <p>Creating an account lets you easily : </p>
+          <ul>
+            <li>Reorder favorites with one click</li>
+            <li>Get news about our amazing deals</li>
+            <li>Track your order shipments</li>
+          </ul>
+         </div>
+         <div class="bottom-btns">
+          <a href="#">Register Coffee Maker</a>
+          <a href="#">Support</a>
+         </div>
+        </div>
+        </div>
+     <div id="modal-wrap3" class="modal-wrapper3">
+        <div class="x-button close">X</div>
+        <div class="modal-pointer">
+          
+        </div>
+        <div class="modal-content">
+                    <form>
+          <input type="submit" value="SIGN OUT" class="login-button" id="signOut"></input>
+        </form>
+         <div class="bottom-btns">
+          <a href="#">Register Coffee Maker</a>
+          <a href="#">Support</a>
+         </div>
+          </div>
+
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="site-wrapper">
+      <div class="nav-holder">
+        <div class="hamburger-icon" id="mobilebutton">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <ul>
+              <li><a href="#" class="nav-links">Keurig® Starter Kit</a></li>
+              <li><a href="#" class="nav-links">Start Auto Delivery</a></li>
+              <li><a href="#" class="nav-links blue">Beverages</a></li>
+              <li><a href="#" class="nav-links blue">Coffee Makers</a></li>
+              <li><a href="#" class="nav-links blue">Accessories</a></li>
+              <li>
+                <a href="#" class="nav-links deals"
+                  ><img src="images/Deals-Clock-red-new.svg" alt="" />Deals</a
+                >
+              </li>
+              <li><a href="#" class="nav-links blue">Recipes & More</a></li>
+              <li><a href="#" class="nav-links blue">Sustainability</a></li>
+              <li><a href="#" class="nav-links">Perks</a></li>
+              <li>
+                <a href="#" class="nav-links outlet"
+                  ><img src="images/outlet-icon1.svg" alt="" />OUTLET</a
+                >
+              </li>
+            </ul>
+          </ul>
+        </div>
+        <div class="mobile-nav">
+          <div class="logo">
+            <a href="#home">
+              <svg
+                viewBox="0 0 141 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="display-image"
+              >
+                <path
+                  d="M27.425.583H43.69v4.753H33.344v4.1h9.553v4.8h-9.553v4.498h10.345v4.753H27.425V.583Zm36.536 15.471c0 1.818-1.002 2.82-3.914 2.82-2.913 0-3.868-1.025-3.868-2.82V.583h-5.896v16.124c0 3.611 2.214 7.223 9.787 7.223 7.62 0 9.833-3.612 9.833-7.223V.583h-5.895v15.471h-.047Zm40.124 7.433h5.896V.583h-5.896v22.904Zm26.074-11.324v6.431a20.205 20.205 0 0 1-3.518.303c-3.03 0-3.612-1.048-3.612-3.006V7.992c0-2.12 1.025-2.82 3.519-2.82 2.423 0 5.08.257 7.875.653l.536-4.94c-2.912-.582-5.639-.792-8.295-.792-6.734 0-9.553 2.284-9.553 7.13v9.53c0 4.59 2.563 7.13 9.39 7.13 3.03 0 6.291-.396 9.087-1.188V12.117h-5.429v.046ZM3.8 8.435a3.595 3.595 0 0 0-3.59 3.612c0 1.98 1.608 3.611 3.59 3.611a3.595 3.595 0 0 0 3.587-3.611 3.595 3.595 0 0 0-3.588-3.612m0-8.295A3.595 3.595 0 0 0 .21 3.75c0 1.981 1.607 3.612 3.588 3.612a3.595 3.595 0 0 0 3.588-3.612A3.595 3.595 0 0 0 3.798.14m0 16.59A3.595 3.595 0 0 0 .21 20.342c0 1.98 1.607 3.611 3.588 3.611a3.595 3.595 0 0 0 3.588-3.611 3.595 3.595 0 0 0-3.588-3.612M21.833.583h-6.64L8.457 12.047l6.734 11.464h6.618l-6.944-11.464L21.833.583ZM93.32 15.82l4.637 7.666H91.34l-3.682-6.477h-4.52v6.477h-5.895V.583h10.835c6.174 0 8.155 2.423 8.155 6.617v3.216c-.023 2.586-.722 4.1-2.913 5.405Zm-2.819-8.365c0-1.491-.7-2.12-2.47-2.12h-4.893v7.014h4.753c1.888 0 2.61-.7 2.61-2.237V7.456Zm48-7.2c-.839 0-1.515.676-1.515 1.538 0 .839.676 1.538 1.515 1.538.839 0 1.515-.699 1.515-1.538A1.502 1.502 0 0 0 138.5.256m0 2.866a1.333 1.333 0 0 1-1.328-1.351c0-.746.606-1.328 1.328-1.328.722 0 1.328.606 1.328 1.328 0 .746-.582 1.351-1.328 1.351m.093-1.141h-.35v.489h-.209V1.025h.56c.302 0 .442.14.442.373v.21c0 .163-.047.256-.21.326l.396.513h-.256l-.373-.466Zm0-.77h-.35v.583h.35c.163 0 .233-.07.233-.186v-.21c0-.14-.07-.186-.233-.186"
+                  fill="#000"
+                  fill-rule="nonzero"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="search-bar">
+            <input
+              class="search-bar"
+              type="text"
+              size="40"
+              placeholder="Search"
+            />
+          </div>
+          <div class="top-nav-btns">
+            <div class="top-nav-icons">
+              <div class="account-icon">
+                <img src="images/account-icon.svg" class="login" alt="account" />
+              </div>
+              <div class="cart-icon">
+                <a href="#cart">
+                  <div class="cartCounter">1</div>
+                  <img src="images/cart-icon.svg" alt="cart" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-nav">
+          <div class="logo">
+            <a href="#home">
+              <svg
+                viewBox="0 0 141 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="display-image"
+              >
+                <path
+                  d="M27.425.583H43.69v4.753H33.344v4.1h9.553v4.8h-9.553v4.498h10.345v4.753H27.425V.583Zm36.536 15.471c0 1.818-1.002 2.82-3.914 2.82-2.913 0-3.868-1.025-3.868-2.82V.583h-5.896v16.124c0 3.611 2.214 7.223 9.787 7.223 7.62 0 9.833-3.612 9.833-7.223V.583h-5.895v15.471h-.047Zm40.124 7.433h5.896V.583h-5.896v22.904Zm26.074-11.324v6.431a20.205 20.205 0 0 1-3.518.303c-3.03 0-3.612-1.048-3.612-3.006V7.992c0-2.12 1.025-2.82 3.519-2.82 2.423 0 5.08.257 7.875.653l.536-4.94c-2.912-.582-5.639-.792-8.295-.792-6.734 0-9.553 2.284-9.553 7.13v9.53c0 4.59 2.563 7.13 9.39 7.13 3.03 0 6.291-.396 9.087-1.188V12.117h-5.429v.046ZM3.8 8.435a3.595 3.595 0 0 0-3.59 3.612c0 1.98 1.608 3.611 3.59 3.611a3.595 3.595 0 0 0 3.587-3.611 3.595 3.595 0 0 0-3.588-3.612m0-8.295A3.595 3.595 0 0 0 .21 3.75c0 1.981 1.607 3.612 3.588 3.612a3.595 3.595 0 0 0 3.588-3.612A3.595 3.595 0 0 0 3.798.14m0 16.59A3.595 3.595 0 0 0 .21 20.342c0 1.98 1.607 3.611 3.588 3.611a3.595 3.595 0 0 0 3.588-3.611 3.595 3.595 0 0 0-3.588-3.612M21.833.583h-6.64L8.457 12.047l6.734 11.464h6.618l-6.944-11.464L21.833.583ZM93.32 15.82l4.637 7.666H91.34l-3.682-6.477h-4.52v6.477h-5.895V.583h10.835c6.174 0 8.155 2.423 8.155 6.617v3.216c-.023 2.586-.722 4.1-2.913 5.405Zm-2.819-8.365c0-1.491-.7-2.12-2.47-2.12h-4.893v7.014h4.753c1.888 0 2.61-.7 2.61-2.237V7.456Zm48-7.2c-.839 0-1.515.676-1.515 1.538 0 .839.676 1.538 1.515 1.538.839 0 1.515-.699 1.515-1.538A1.502 1.502 0 0 0 138.5.256m0 2.866a1.333 1.333 0 0 1-1.328-1.351c0-.746.606-1.328 1.328-1.328.722 0 1.328.606 1.328 1.328 0 .746-.582 1.351-1.328 1.351m.093-1.141h-.35v.489h-.209V1.025h.56c.302 0 .442.14.442.373v.21c0 .163-.047.256-.21.326l.396.513h-.256l-.373-.466Zm0-.77h-.35v.583h.35c.163 0 .233-.07.233-.186v-.21c0-.14-.07-.186-.233-.186"
+                  fill="#000"
+                  fill-rule="nonzero"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              class="search-bar"
+              type="text"
+              size="40"
+              placeholder="Search"
+            />
+          </div>
+          <div class="top-nav-btns">
+            <p class="freeship">FREE SHIPPING $35+</p>
+            <div class="top-nav-icons">
+              <div class="support-icon">
+                <img src="images/support-icon.svg" alt="support" />
+                <p>Support</p>
+              </div>
+              <div class="account-icon">
+                <img src="images/account-icon.svg" alt="account" class="login" />
+                <p>Account</p>
+              </div>
+              <div class="cart-icon">
+                <a href="#cart" class="cartlinknav">
+                  <div class="cartCounter"></div>
+                  <img src="images/cart-icon.svg" alt="cart" />
+                </a>
+                <p>Cart</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#" class="nav-links">Keurig® Starter Kit</a></li>
+            <li><a href="#" class="nav-links">Start Auto Delivery</a></li>
+            <li><a href="#" class="nav-links blue">Beverages</a></li>
+            <li><a href="#" class="nav-links blue">Coffee Makers</a></li>
+            <li><a href="#" class="nav-links blue">Accessories</a></li>
+            <li>
+              <a href="#" class="nav-links deals"
+                ><img src="images/Deals-Clock-red-new.svg" alt="" />Deals</a
+              >
+            </li>
+            <li><a href="#" class="nav-links blue">Recipes & More</a></li>
+            <li><a href="#" class="nav-links blue">Sustainability</a></li>
+            <li><a href="#" class="nav-links">Perks</a></li>
+            <li>
+              <a href="#" class="nav-links outlet"
+                ><img src="images/outlet-icon1.svg" alt="" />OUTLET</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="buttons-hero">
+        <div class="button-link">
+          <a href="#">$140 off K-Elite® Coffee Maker with Keurig Starter Kit</a>
+        </div>
+        <div class="button-link">
+          <a href="#">Up to 30% Price Drop - New Varieties Added!</a>
+        </div>
+        <div class="button-link">
+          <a href="#">Save $80 and get the K-Select® Coffee Maker for $69.99</a>
+        </div>
+        <div class="button-link">
+          <a href="#">Save $50 and get the K-Slim® Coffee Maker for $79.99</a>
+        </div>
+      </div>
+      <div id="app"></div>
+      <div class="footer-holder">
+        <div class="base-footer">
+          <div class="footer-desc">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Find a store .</p>
+            <p>Customer Support 866-901-BREW(2739)</p>
+          </div>
+          <div class="socials">
+            <p>Follow Us</p>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="col1">
+            <div class="footer-shop">
+              <p>Shop</p>
+              <a href="#">Coffee Makers</a>
+              <a href="#">Beverages</a>
+              <a href="#">Iced</a>
+            </div>
+            <div class="footer-orders">
+              <p>Orders</p>
+              <a href="#">Track Your Order</a>
+              <a href="#">Returns</a>
+              <a href="#">Auto Delivery Orders</a>
+            </div>
+          </div>
+          <div class="col2">
+            <p>Helpful Info</p>
+            <a href="#">Register Your Appliance</a>
+            <a href="#">Support</a>
+            <a href="#">Product Recall</a>
+            <a href="#">Business Solutions</a>
+            <a href="#">Site Map</a>
+            <a href="#">Contact Us</a>
+            <a href="#">CA Privacy Rights</a>
+            <a href="#">Do Not Sell My Personal Information</a>
+            <a href="#">Keurig Perks Terms and Conditions</a>
+          </div>
+          <div class="col3">
+            
+            <p>About Us</p>
+            <a href="#">About Us</a>
+            <a href="#">News</a>
+            <a href="#">Careers</a>
+            <a href="#">Sustainability</a>
+            <a href="#">Rewards Program</a>
+            <a href="#">Accepted Payment Methods</a>
+          </div>
+          <div class="col4">
+            <p>Join Our Mailing List</p>
+            <span
+              >Stay up-to-date with the latest news and new arrivals direct to
+              your inbox.</span
+            >
+            <div class="footer-signup">
+              <input type="text" placeholder="Your email" />
+              <input type="submit" value="Sign Up" class="emailsignup" />
+            </div>
+            <p style="margin-top: 50px">Select Country</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="lib/jquery-3.7.1.min.js"></script>
+    <script type="module" src="app/app.js"></script>
+  </body>
+</html>

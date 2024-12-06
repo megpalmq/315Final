@@ -1,0 +1,129 @@
+@font-face {
+  font-family: markReg;
+  src: url(../fonts/MarkOT-Medium.ttf);
+}
+$MarkBold: "MarkOT-Bold", sans-serif;
+$MarkBook: "MarkOT-Book", sans-serif;
+$MarkItal: "MarkOT-Italic", sans-serif;
+$MarkLight: "MarkOT-Light", sans-serif;
+$MarkMedium: "MarkOT-Medium", sans-serif;
+$MarkReg: "MarkOT-Reg", sans-serif;
+
+$base: #ece9e4;
+$yellow: #f1be48;
+$red: #c8102e;
+$brown: #5a0000;
+$darkbrown: #250000;
+$blue: #2f3c4a;
+$text-green: #095436;
+
+//button colors
+$silver: #a3a7a8;
+$gold: #c4b8aa;
+$slate: #676260;
+
+$black: #333333;
+$vin-red: #bb3a56;
+$oasis: #a4cfd3;
+$sandstone: #ddc7a5;
+$navy: #32425e;
+$white: #f3f3f3;
+$gray: #a9a9a6;
+$green: #a8bba2;
+$rose: #ffe7e8;
+$red-btn: #ff0000;
+$evergreen: #405545;
+
+.footer-holder {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: markReg;
+}
+.base-footer {
+  background-color: $darkbrown;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  max-width: 1200px;
+  height: 52px;
+  .footer-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    padding-left: 40px;
+    p {
+      margin-top: 12px;
+    }
+  }
+  .socials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 340px;
+    padding-right: 130px;
+    p {
+      margin-top: 12px;
+      padding-left: 20px;
+    }
+  }
+}
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  .col1,
+  .col2,
+  .col3,
+  .col4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 440px;
+    margin-top: 30px;
+    img {
+      width: 180px;
+    }
+    p {
+      font-size: 20px;
+    }
+    a {
+      text-decoration: none;
+      color: #000;
+      margin-bottom: 20px;
+      &:hover {
+        text-decoration: underline;
+        color: #2a2a2a;
+      }
+    }
+  }
+  .footer-shop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .footer-orders {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .col4 {
+    span {
+      width: 300px;
+      margin-bottom: 30px;
+    }
+    input {
+      border: 3px solid #bbbbbb;
+      height: 50px;
+      font-family: $MarkReg;
+    }
+    .emailsignup {
+      border: 3px solid $yellow;
+      background-color: #fff;
+      margin-left: -10px;
+      padding: 0 20px;
+      font-family: $MarkReg;
+    }
+  }
+}

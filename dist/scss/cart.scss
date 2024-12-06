@@ -1,0 +1,306 @@
+$MarkBold: "MarkOT-Bold", sans-serif;
+$MarkBook: "MarkOT-Book", sans-serif;
+$MarkItal: "MarkOT-Italic", sans-serif;
+$MarkLight: "MarkOT-Light", sans-serif;
+$MarkMedium: "MarkOT-Medium", sans-serif;
+$MarkReg: "MarkOT-Reg", sans-serif;
+
+$base: #ece9e4;
+$yellow: #f1be48;
+$red: #c8102e;
+$brown: #5a0000;
+$darkbrown: #250000;
+$blue: #2f3c4a;
+$text-green: #095436;
+
+//button colors
+$silver: #a3a7a8;
+$gold: #c4b8aa;
+$slate: #676260;
+
+$black: #333333;
+$vin-red: #bb3a56;
+$oasis: #a4cfd3;
+$sandstone: #ddc7a5;
+$navy: #32425e;
+$white: #f3f3f3;
+$gray: #a9a9a6;
+$green: #a8bba2;
+$rose: #ffe7e8;
+$red-btn: #ff0000;
+$evergreen: #405545;
+
+.shopping-cart-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1200px;
+  height: 180px;
+  background-image: url(../images/shopping-cart-hero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  color: $text-green;
+  h1 {
+    font-size: 22px;
+    font-family: $MarkBold;
+    margin-top: 20px;
+  }
+  span {
+    font-size: 11px;
+    margin-top: -14px;
+  }
+  .order-dates {
+    display: flex;
+    margin-top: 14px;
+    .order {
+      text-align: center;
+      padding: 0 14px;
+      height: 40px;
+      h3 {
+        font-size: 15px;
+        font-family: $MarkMedium;
+      }
+      p {
+        font-size: 15px;
+        margin-top: -14px;
+      }
+    }
+    .order-border {
+      border-right: 1px solid $text-green;
+    }
+  }
+  h4 {
+    font-size: 12px;
+    font-weight: 100;
+    font-family: $MarkItal;
+    margin-top: 20px;
+  }
+}
+
+.cart-info-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+.cart-sum {
+  width: 275px;
+  height: 400px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-left: 12px;
+  position: relative;
+  padding: 20px 20px;
+  h1 {
+    font-weight: 100;
+    font-size: 20px;
+  }
+  .cart-sub {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px dashed #595959;
+    .real-cart-sub {
+      padding-right: 10px;
+    }
+  }
+  .savings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2px;
+    p {
+      font-size: 15px;
+      margin-top: 16px;
+    }
+    span {
+      font-family: $MarkMedium;
+      color: $red;
+      padding-right: 9px;
+    }
+  }
+  .coupon {
+    color: rgb(55, 132, 255);
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-top: -30px;
+  }
+  .cart-shipping {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      font-size: 15px;
+      margin-top: 16px;
+    }
+    span {
+      color: $green;
+      padding-right: 9px;
+    }
+  }
+  .checkout-button {
+    position: absolute;
+    bottom: 20px;
+    margin-left: 16px;
+    padding: 10px 20px;
+    background-color: $yellow;
+    text-decoration: none;
+    color: $darkbrown;
+    transition: ease 0.3s;
+    &:hover {
+      color: #fff;
+      background-color: $blue;
+    }
+  }
+}
+
+.cart-container {
+  width: 870px;
+  min-height: 270px;
+  background-color: $base;
+  box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  margin-right: 12px;
+  margin-bottom: 40px;
+  .cart-lead {
+    color: $darkbrown;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: $MarkMedium;
+    font-weight: 100;
+    font-size: 23px;
+  }
+  .under-lead {
+    color: $darkbrown;
+    font-family: $MarkItal;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: -20px;
+  }
+}
+.cart {
+  .cart-box {
+    background-color: #fff;
+    height: 180px;
+    width: 836px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    box-shadow: 0px 0px 10px 6px rgba(0, 0, 0, 0.08);
+    .cart-main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .cart-name {
+        width: 240px;
+        p {
+          font-size: 12px;
+          margin-top: 10px;
+        }
+        h3 {
+          font-weight: 100;
+          font-family: $MarkBook;
+          font-size: 16px;
+          margin-top: -10px;
+          letter-spacing: 1px;
+        }
+      }
+      .points {
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 160px;
+        h2 {
+          font-weight: 100;
+          font-size: 20px;
+        }
+        span {
+          font-weight: 600;
+        }
+        p {
+          font-weight: 500;
+          font-family: $MarkBold;
+          font-size: 16px;
+          padding: 2px 11px;
+          border: 3px solid #595959;
+          text-align: center;
+          border-radius: 40px;
+          cursor: pointer;
+          margin-right: 30px;
+        }
+      }
+    }
+    &:last-child {
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      margin-bottom: 20px;
+    }
+    img {
+      width: 153px;
+      height: 114px;
+      object-fit: cover;
+    }
+    .x-btn {
+      position: absolute;
+      right: 30px;
+      top: 8px;
+      display: flex;
+      a {
+        color: #6b6b6b;
+        font-size: 12px;
+        margin-top: 4px;
+        &:hover {
+          color: #000;
+        }
+      }
+      p {
+        padding-left: 20px;
+        font-family: $MarkBold;
+        font-size: 18px;
+        color: #6b6b6b;
+        cursor: pointer;
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+    .qty {
+      position: absolute;
+      display: flex;
+      bottom: 4px;
+      right: 280px;
+      justify-content: center;
+      p {
+        padding-right: 20px;
+        font-size: 12px;
+        font-family: $MarkMedium;
+        letter-spacing: 0.5px;
+        color: #595959;
+      }
+      select {
+        margin-top: -15px;
+        padding: 10px;
+        border: 2px solid $yellow;
+      }
+    }
+    .cart-subtotal {
+      position: absolute;
+      bottom: 4px;
+      right: 40px;
+      font-size: 12px;
+      font-family: $MarkMedium;
+      letter-spacing: 0.5px;
+      color: #595959;
+    }
+  }
+}

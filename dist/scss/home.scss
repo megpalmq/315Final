@@ -1,0 +1,436 @@
+@font-face {
+  font-family: markReg;
+  src: url(../fonts/MarkOT-Medium.ttf);
+}
+
+$MarkBold: "MarkOT-Bold", sans-serif;
+$MarkBook: "MarkOT-Book", sans-serif;
+$MarkItal: "MarkOT-Italic", sans-serif;
+$MarkLight: "MarkOT-Light", sans-serif;
+$MarkMedium: "MarkOT-Medium", sans-serif;
+$MarkReg: "MarkOT-Reg", sans-serif;
+
+$base: #ece9e4;
+$yellow: #f1be48;
+$red: #c8102e;
+$brown: #5a0000;
+$darkbrown: #250000;
+$blue: #2f3c4a;
+$text-green: #095436;
+
+//button colors
+$silver: #a3a7a8;
+$gold: #c4b8aa;
+$slate: #676260;
+
+$black: #333333;
+$vin-red: #bb3a56;
+$oasis: #a4cfd3;
+$sandstone: #ddc7a5;
+$navy: #32425e;
+$white: #f3f3f3;
+$gray: #a9a9a6;
+$green: #a8bba2;
+$rose: #ffe7e8;
+$red-btn: #ff0000;
+$evergreen: #405545;
+
+.home-hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+  }
+}
+
+.filters {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  select {
+    padding: 17px 37px 17px 17px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../images/arrow-select.svg);
+    background-repeat: no-repeat;
+    background-position: 87% 24px;
+    background-size: 12%;
+    border: 2px solid #a1a1a1;
+    border-radius: 4px;
+    font-family: $MarkMedium;
+  }
+  .sort-by {
+    position: relative;
+    margin-top: 13px;
+    label {
+      position: absolute;
+      margin-top: -6px;
+      margin-left: 15px;
+      font-size: 12px;
+    }
+  }
+  .sortby {
+    width: 210px;
+    height: 50px;
+    padding: 0 30px 0 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../images/arrow-select.svg);
+    background-repeat: no-repeat;
+    background-position: 170px 21px;
+    background-size: 10%;
+    border: none;
+    border-radius: 4px;
+    font-family: MarkMedium;
+    font-size: 14px;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+.sort-and-filter {
+  display: none;
+  margin-left: 30px;
+  padding: 6px 12px;
+  border: 2px solid #000;
+  font-family: MarkReg;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: -20px;
+}
+
+.all-items-container {
+  min-height: 2800px;
+  max-width: 1200px;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.item-box {
+  width: 280px;
+  height: 735px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  position: relative;
+  font-family: markReg;
+  transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1),
+    box-shadow 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.2);
+    border: 2px black solid;
+  }
+  .pbanner {
+    padding: 5px 10px;
+    position: absolute;
+    font-family: markReg;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 5px;
+  }
+  img {
+    width: 400px;
+    height: 213px;
+    object-fit: contain;
+    object-position: 20px;
+    margin-right: 30px;
+    margin-top: 60px;
+  }
+  .img-fix {
+    width: 400px;
+    height: 213px;
+    object-fit: contain;
+    object-position: -20px;
+    margin-right: 30px;
+    margin-top: 60px;
+  }
+  .img-fix2 {
+    width: 400px;
+    height: 213px;
+    object-fit: contain;
+    object-position: 16px;
+    margin-right: 30px;
+    margin-top: 60px;
+  }
+  .img-fix3 {
+    width: 400px;
+    height: 213px;
+    object-fit: contain;
+    object-position: 36px;
+    margin-right: 30px;
+    margin-top: 60px;
+  }
+  .colorbtns {
+    margin: 10px;
+  }
+  .item-title {
+    padding: 0 10px 0 0;
+    margin-left: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  .item-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    padding-left: 10px;
+
+    span {
+      color: $red;
+      font-family: markReg;
+      font-size: 19px;
+      font-weight: bold;
+    }
+
+    .before-price {
+      text-decoration: line-through;
+      color: #666;
+      font-size: 12px;
+      margin-top: 4px;
+      display: block;
+    }
+
+    p {
+      font-size: 12px;
+      margin-left: 10px;
+      margin: 0 auto;
+      margin-top: 0;
+      align-self: center;
+      font-weight: bold;
+      color: #333333;
+      width: 60%;
+    }
+  }
+  .item-price2 {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    padding-left: 10px;
+
+    span {
+      color: #333333;
+      font-family: markReg;
+      font-size: 19px;
+      font-weight: bold;
+    }
+
+    .before-price {
+      text-decoration: line-through;
+      color: #666;
+      font-size: 12px;
+      margin-top: 4px;
+      display: block;
+    }
+
+    p {
+      font-size: 11px;
+      margin-left: 10px;
+      margin: 0 auto;
+      margin-top: 0;
+      align-self: center;
+      font-weight: bold;
+      color: #333333;
+      width: 60%;
+    }
+  }
+  .coupon {
+    display: flex;
+    width: 90%;
+    color: #5a0000;
+    line-height: 10px;
+
+    p {
+      margin-top: 15px;
+      padding-left: 10px;
+    }
+    span {
+      font-size: 9px;
+    }
+    .couponSticker {
+      background-color: #5a0000;
+      width: 55px;
+      height: 17px;
+      border-radius: 0 10px 0 10px;
+      display: flex;
+      margin-left: 10px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+
+      p {
+        font-size: 10px;
+        padding-left: 3px;
+        padding-top: 4px;
+        padding-right: 5px;
+        margin: 0 auto;
+        color: white;
+        font-weight: 500;
+        font-family: markReg;
+      }
+    }
+  }
+
+  .item-rating {
+    margin-left: 10px;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    .stars {
+      color: $yellow;
+      font-size: 12px;
+      padding-right: 12px;
+    }
+    .starblank {
+      color: #dcdcdc;
+    }
+    .rating {
+      font-size: 14px;
+    }
+  }
+  .shipping {
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+    margin-left: 6px;
+    i {
+      font-size: 20px;
+      padding: 4px;
+    }
+  }
+  .compare {
+    margin-left: 10px;
+    bottom: 60px;
+    margin-top: 40px;
+    display: flex;
+    position: absolute;
+    input {
+      width: 20px;
+      height: 20px;
+      border-radius: 0;
+      border: 2px solid #a0a0a0;
+    }
+    p {
+      font-size: 14px;
+      margin-left: 8px;
+    }
+  }
+  .buy-now {
+    font-family: markReg;
+    text-align: center;
+    width: 92%;
+    height: 40px;
+    border: 2px solid $yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 20px;
+    left: 3.85%;
+    cursor: pointer;
+    font-weight: 600;
+    position: absolute;
+  }
+}
+
+.shopBtn {
+  width: 22px;
+  height: 22px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  margin-left: 4px;
+  margin: auto;
+  float: none;
+  border-radius: 50%;
+  font-family: markReg;
+}
+
+// button classes
+.btn-silver {
+  background-color: $silver;
+}
+.btn-gold {
+  background-color: $gold;
+}
+.btn-slate {
+  background-color: $slate;
+}
+.btn-black {
+  background-color: black;
+}
+.btn-vinred {
+  background-color: $vin-red;
+}
+.btn-oasis {
+  background-color: $oasis;
+}
+.btn-sandstone {
+  background-color: $sandstone;
+}
+.btn-navy {
+  background-color: $navy;
+}
+.btn-white {
+  background-color: $white;
+}
+.btn-gray {
+  background-color: $gray;
+}
+.btn-green {
+  background-color: $green;
+}
+.btn-rose {
+  background-color: $rose;
+}
+.btn-red {
+  background-color: $red-btn;
+}
+.btn-evergreen {
+  background-color: $evergreen;
+}
+.btn-blue {
+  background-color: #2907c1;
+}
+
+@media screen and (max-width: 991px) {
+  #modal-inject {
+    .modal-wrapper {
+      right: 52px;
+      top: 80px;
+    }
+  }
+
+  .site-wrapper {
+    .filters {
+      .sort-and-filter {
+        display: flex;
+      }
+      .filter-boxes {
+        display: none;
+      }
+      .sort-by {
+        display: none;
+      }
+    }
+  }
+}
