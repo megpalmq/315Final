@@ -1,0 +1,14 @@
+{
+  "name": "315final",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "serve": "live-server dist",
+    "build-webpack": "webpack",
+     "compile-sass": "sass dist/scss/styles.scss dist/css/styles.css -w --no-source-map"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
