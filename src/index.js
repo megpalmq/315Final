@@ -133,23 +133,20 @@ $("form").on("submit", () => {
   e.preventDefault();
 });
 function loadCart() {
-  $(".cart").html(""); // Clear current cart items
-  let subtotal = 0; // Initialize subtotal
+  $(".cart").html("");
+  let subtotal = 0;
 
   console.log("Loading cart items...");
 
-  // Loop through each item in the cart
   $.each(productInfo.Cart, (idx, cartItem) => {
     let item = productInfo.Products[cartItem.itemIdx];
 
-    // Add the price of the current item to the subtotal
     subtotal += parseFloat(item.realPrice);
 
     console.log(
       `Item ${idx}: ${item.title}, Price: ${item.realPrice}, Subtotal so far: ${subtotal}`
     );
 
-    // Append the cart item to the container
     $(".cart").append(`
       <div class="cart-box">
         <div class="x-btn">
@@ -181,17 +178,13 @@ function loadCart() {
     `);
   });
 
-  // Update the subtotal dynamically in the cart summary
   $(".real-cart-sub").text(`$${subtotal.toFixed(2)}`);
 
-  // Add click handler for the remove button
   $(".remove-item").on("click", function () {
     let itemIndex = $(this).data("index");
 
-    // Remove the item from the cart
     productInfo.Cart.splice(itemIndex, 1);
 
-    // Reload the cart
     loadCart();
 
     updateCartCount();
@@ -199,7 +192,7 @@ function loadCart() {
 }
 
 function loadItems() {
-  $(".all-items-container").html(""); // Clear existing content
+  $(".all-items-container").html("");
   console.log("loadItems function called");
   console.log("productInfo:", productInfo);
 
@@ -313,7 +306,7 @@ function updateCartCount() {
     $(".cartCounter").html(cartCount);
   }
 }
-//MODAL INJECTION
+
 function modalToggle() {
   $(".login").on("click", (e) => {
     $("#modal-inject").toggle();
