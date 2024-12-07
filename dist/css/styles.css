@@ -54,7 +54,7 @@ p {
   background-size: 12%;
   border: 2px solid #a1a1a1;
   border-radius: 4px;
-  font-family: "MarkOT-Medium", sans-serif;
+  font-family: markReg;
 }
 .filters .sort-by {
   position: relative;
@@ -79,7 +79,7 @@ p {
   background-size: 10%;
   border: none;
   border-radius: 4px;
-  font-family: MarkMedium;
+  font-family: markReg;
   font-size: 14px;
 }
 .filters .sortby:focus {
@@ -507,7 +507,7 @@ p {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 156px;
+  height: 200px;
   background-color: #ece9e4;
 }
 .nav-holder .logo svg {
@@ -958,30 +958,42 @@ nav ul .outlet img {
 }
 .buttons-hero {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.25rem 2.5rem;
+  width: 100%;
   font-family: markReg;
+  margin-bottom: 20px;
 }
 .buttons-hero .button-link {
-  background-color: #ece9e4;
-  padding: 0.4rem 2.5rem 0.75rem 2.5rem;
-  margin: 0 0.625rem;
-  border-radius: 10px;
+  background-color: #473036;
+  padding-top: 20px;
+  height: 98px;
   text-align: center;
+  width: 100%;
+  font-size: 10px;
+  line-height: 20px;
   transition: ease 0.4s;
   cursor: pointer;
+  border-right: 2px solid white;
+  padding-right: 2px;
+}
+.buttons-hero .button-link span {
+  font-size: 10px;
+  text-decoration: underline;
 }
 .buttons-hero .button-link a {
   font-size: 12px;
   text-decoration: none;
-  color: #000;
+  color: #ffffff;
+  width: 100%;
 }
-.buttons-hero .button-link:hover {
+between buttons .buttons-hero .button-link:hover {
   transform: scale(1.05);
 }
-.buttons-hero .button-link:hover a {
+between buttons .buttons-hero .button-link:hover a {
   text-decoration: underline;
+}
+.buttons-hero .button-link:last-child {
+  border-right: none;
+  margin-right: 0;
 }
 
 @font-face {
@@ -1530,6 +1542,7 @@ nav ul .outlet img {
   max-width: 1200px;
   margin: 0 auto;
   font-family: markReg;
+  font-weight: 100;
 }
 
 .base-footer {
@@ -1567,6 +1580,8 @@ nav ul .outlet img {
   display: flex;
   justify-content: space-between;
   width: 1200px;
+  font-weight: lighter;
+  padding-top: 0px;
 }
 .footer-links .col1,
 .footer-links .col2,
@@ -1608,37 +1623,82 @@ nav ul .outlet img {
 .footer-links .footer-shop {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 .footer-links .footer-orders {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 .footer-links .col4 span {
   width: 300px;
-  margin-bottom: 30px;
 }
 .footer-links .col4 input {
   border: 3px solid #bbbbbb;
   height: 50px;
-  font-family: "MarkOT-Reg", sans-serif;
+  font-family: markReg;
 }
 .footer-links .col4 .emailsignup {
   border: 3px solid #f1be48;
   background-color: #fff;
   margin-left: -10px;
   padding: 0 20px;
-  font-family: "MarkOT-Reg", sans-serif;
+  font-family: markReg;
+}
+.footer-links .col4 .selectCountry {
+  display: flex;
+}
+.footer-links .col4 .selectCountry .usa {
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/USA.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer-links .col4 .selectCountry .US {
+  padding-left: 10px;
+}
+.footer-links .col4 .selectCountry .US img {
+  width: 10px;
+  height: 6px;
 }
 
+.bottom-footer {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  bottom: 0;
+  width: 100%;
+  margin-top: 40px;
+}
+.bottom-footer hr {
+  width: 65%;
+  margin: 0 auto;
+}
+.bottom-footer p {
+  padding-top: 20px;
+  margin: 0;
+  font-weight: lighter;
+  font-family: markReg;
+  font-style: italic;
+  color: #676260;
+  font-size: 12px;
+}
+.bottom-footer .butt {
+  padding-bottom: 40px;
+}
+
+@font-face {
+  font-family: markReg;
+  src: url(../fonts/MarkOT-Medium.ttf);
+}
 .shopping-cart-hero {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   max-width: 1200px;
-  height: 180px;
+  height: 80px;
   background-image: url(../images/shopping-cart-hero.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -1649,38 +1709,9 @@ nav ul .outlet img {
 }
 .shopping-cart-hero h1 {
   font-size: 22px;
-  font-family: "MarkOT-Bold", sans-serif;
+  font-family: markReg;
   margin-top: 20px;
-}
-.shopping-cart-hero span {
-  font-size: 11px;
-  margin-top: -14px;
-}
-.shopping-cart-hero .order-dates {
-  display: flex;
-  margin-top: 14px;
-}
-.shopping-cart-hero .order-dates .order {
-  text-align: center;
-  padding: 0 14px;
-  height: 40px;
-}
-.shopping-cart-hero .order-dates .order h3 {
-  font-size: 15px;
-  font-family: "MarkOT-Medium", sans-serif;
-}
-.shopping-cart-hero .order-dates .order p {
-  font-size: 15px;
-  margin-top: -14px;
-}
-.shopping-cart-hero .order-dates .order-border {
-  border-right: 1px solid #095436;
-}
-.shopping-cart-hero h4 {
-  font-size: 12px;
-  font-weight: 100;
-  font-family: "MarkOT-Italic", sans-serif;
-  margin-top: 20px;
+  font-weight: lighter;
 }
 
 .cart-info-container {
@@ -1689,6 +1720,7 @@ nav ul .outlet img {
   justify-content: center;
   margin-top: 70px;
   margin-bottom: 100px;
+  font-family: markReg;
 }
 
 .cart-sum {
@@ -1704,6 +1736,7 @@ nav ul .outlet img {
 .cart-sum h1 {
   font-weight: 100;
   font-size: 20px;
+  font-family: markReg;
 }
 .cart-sum .cart-sub {
   display: flex;
@@ -1725,7 +1758,7 @@ nav ul .outlet img {
   margin-top: 16px;
 }
 .cart-sum .savings span {
-  font-family: "MarkOT-Medium", sans-serif;
+  font-family: markReg;
   color: #c8102e;
   padding-right: 9px;
 }
@@ -1776,16 +1809,17 @@ nav ul .outlet img {
   color: #250000;
   margin-left: 20px;
   margin-top: 20px;
-  font-family: "MarkOT-Medium", sans-serif;
+  font-family: markreg;
   font-weight: 100;
   font-size: 23px;
 }
 .cart-container .under-lead {
   color: #250000;
-  font-family: "MarkOT-Italic", sans-serif;
+  font-family: markReg;
   font-size: 14px;
   margin-left: 20px;
   margin-top: -20px;
+  font-style: italic;
 }
 
 .cart .cart-box {
@@ -1813,7 +1847,7 @@ nav ul .outlet img {
 }
 .cart .cart-box .cart-main .cart-name h3 {
   font-weight: 100;
-  font-family: "MarkOT-Book", sans-serif;
+  font-family: markReg;
   font-size: 16px;
   margin-top: -10px;
   letter-spacing: 1px;
@@ -1834,7 +1868,7 @@ nav ul .outlet img {
 }
 .cart .cart-box .cart-main .points p {
   font-weight: 500;
-  font-family: "MarkOT-Bold", sans-serif;
+  font-family: markReg;
   font-size: 16px;
   padding: 2px 11px;
   border: 3px solid #595959;
@@ -1869,7 +1903,7 @@ nav ul .outlet img {
 }
 .cart .cart-box .x-btn p {
   padding-left: 20px;
-  font-family: "MarkOT-Bold", sans-serif;
+  font-family: markReg;
   font-size: 18px;
   color: #6b6b6b;
   cursor: pointer;
@@ -1887,7 +1921,7 @@ nav ul .outlet img {
 .cart .cart-box .qty p {
   padding-right: 20px;
   font-size: 12px;
-  font-family: "MarkOT-Medium", sans-serif;
+  font-family: markReg;
   letter-spacing: 0.5px;
   color: #595959;
 }
@@ -1901,7 +1935,31 @@ nav ul .outlet img {
   bottom: 4px;
   right: 40px;
   font-size: 12px;
-  font-family: "MarkOT-Medium", sans-serif;
+  font-family: markReg;
   letter-spacing: 0.5px;
   color: #595959;
+}
+
+.upperNav {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  background-color: #ffc930;
+  padding: 12px;
+}
+.upperNav .centerInfo {
+  display: flex;
+  margin: 0 auto;
+  font-family: markReg;
+  font-weight: bold;
+  font-size: 14px;
+}
+.upperNav .centerInfo span {
+  text-decoration: underline;
+}
+.upperNav .centerInfo .see {
+  font-weight: lighter;
+}
+.upperNav .centerInfo .gone {
+  font-family: markReg;
 }

@@ -30,28 +30,42 @@ $evergreen: #405545;
 
 .buttons-hero {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1.25rem 2.5rem;
+  width: 100%;
   font-family: markReg;
+  margin-bottom: 20px;
+
   .button-link {
-    background-color: $base;
-    padding: 0.4rem 2.5rem 0.75rem 2.5rem;
-    margin: 0 0.625rem;
-    border-radius: 10px;
+    background-color: #473036;
+    padding-top: 20px;
+    height: 98px;
     text-align: center;
+    width: 100%;
+    font-size: 10px;
+    line-height: 20px;
+    span {
+      font-size: 10px;
+      text-decoration: underline;
+    }
     a {
       font-size: 12px;
       text-decoration: none;
-      color: #000;
+      color: #ffffff;
+      width: 100%;
     }
     transition: ease 0.4s;
     cursor: pointer;
-    &:hover {
+    border-right: 2px solid white;
+    padding-right: 2px;
+    between buttons &:hover {
       transform: scale(1.05);
       a {
         text-decoration: underline;
       }
+    }
+
+    &:last-child {
+      border-right: none;
+      margin-right: 0;
     }
   }
 }

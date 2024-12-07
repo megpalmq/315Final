@@ -3,13 +3,6 @@
   src: url(../fonts/MarkOT-Medium.ttf);
 }
 
-$MarkBold: "MarkOT-Bold", sans-serif;
-$MarkBook: "MarkOT-Book", sans-serif;
-$MarkItal: "MarkOT-Italic", sans-serif;
-$MarkLight: "MarkOT-Light", sans-serif;
-$MarkMedium: "MarkOT-Medium", sans-serif;
-$MarkReg: "MarkOT-Reg", sans-serif;
-
 $base: #ece9e4;
 $yellow: #f1be48;
 $red: #c8102e;
@@ -65,7 +58,7 @@ $evergreen: #405545;
     background-size: 12%;
     border: 2px solid #a1a1a1;
     border-radius: 4px;
-    font-family: $MarkMedium;
+    font-family: markReg;
   }
   .sort-by {
     position: relative;
@@ -90,7 +83,7 @@ $evergreen: #405545;
     background-size: 10%;
     border: none;
     border-radius: 4px;
-    font-family: MarkMedium;
+    font-family: markReg;
     font-size: 14px;
     &:focus {
       outline: none;

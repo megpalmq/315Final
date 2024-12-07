@@ -1,9 +1,7 @@
-$MarkBold: "MarkOT-Bold", sans-serif;
-$MarkBook: "MarkOT-Book", sans-serif;
-$MarkItal: "MarkOT-Italic", sans-serif;
-$MarkLight: "MarkOT-Light", sans-serif;
-$MarkMedium: "MarkOT-Medium", sans-serif;
-$MarkReg: "MarkOT-Reg", sans-serif;
+@font-face {
+  font-family: markReg;
+  src: url(../fonts/MarkOT-Medium.ttf);
+}
 
 $base: #ece9e4;
 $yellow: #f1be48;
@@ -36,7 +34,7 @@ $evergreen: #405545;
   justify-content: center;
   flex-direction: column;
   max-width: 1200px;
-  height: 180px;
+  height: 80px;
   background-image: url(../images/shopping-cart-hero.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -46,38 +44,9 @@ $evergreen: #405545;
   color: $text-green;
   h1 {
     font-size: 22px;
-    font-family: $MarkBold;
+    font-family: markReg;
     margin-top: 20px;
-  }
-  span {
-    font-size: 11px;
-    margin-top: -14px;
-  }
-  .order-dates {
-    display: flex;
-    margin-top: 14px;
-    .order {
-      text-align: center;
-      padding: 0 14px;
-      height: 40px;
-      h3 {
-        font-size: 15px;
-        font-family: $MarkMedium;
-      }
-      p {
-        font-size: 15px;
-        margin-top: -14px;
-      }
-    }
-    .order-border {
-      border-right: 1px solid $text-green;
-    }
-  }
-  h4 {
-    font-size: 12px;
-    font-weight: 100;
-    font-family: $MarkItal;
-    margin-top: 20px;
+    font-weight: lighter;
   }
 }
 
@@ -87,6 +56,7 @@ $evergreen: #405545;
   justify-content: center;
   margin-top: 70px;
   margin-bottom: 100px;
+  font-family: markReg;
 }
 
 .cart-sum {
@@ -101,6 +71,7 @@ $evergreen: #405545;
   h1 {
     font-weight: 100;
     font-size: 20px;
+    font-family: markReg;
   }
   .cart-sub {
     display: flex;
@@ -121,7 +92,7 @@ $evergreen: #405545;
       margin-top: 16px;
     }
     span {
-      font-family: $MarkMedium;
+      font-family: markReg;
       color: $red;
       padding-right: 9px;
     }
@@ -173,16 +144,17 @@ $evergreen: #405545;
     color: $darkbrown;
     margin-left: 20px;
     margin-top: 20px;
-    font-family: $MarkMedium;
+    font-family: markreg;
     font-weight: 100;
     font-size: 23px;
   }
   .under-lead {
     color: $darkbrown;
-    font-family: $MarkItal;
+    font-family: markReg;
     font-size: 14px;
     margin-left: 20px;
     margin-top: -20px;
+    font-style: italic;
   }
 }
 .cart {
@@ -208,7 +180,7 @@ $evergreen: #405545;
         }
         h3 {
           font-weight: 100;
-          font-family: $MarkBook;
+          font-family: markReg;
           font-size: 16px;
           margin-top: -10px;
           letter-spacing: 1px;
@@ -229,7 +201,7 @@ $evergreen: #405545;
         }
         p {
           font-weight: 500;
-          font-family: $MarkBold;
+          font-family: markReg;
           font-size: 16px;
           padding: 2px 11px;
           border: 3px solid #595959;
@@ -265,7 +237,7 @@ $evergreen: #405545;
       }
       p {
         padding-left: 20px;
-        font-family: $MarkBold;
+        font-family: markReg;
         font-size: 18px;
         color: #6b6b6b;
         cursor: pointer;
@@ -283,7 +255,7 @@ $evergreen: #405545;
       p {
         padding-right: 20px;
         font-size: 12px;
-        font-family: $MarkMedium;
+        font-family: markReg;
         letter-spacing: 0.5px;
         color: #595959;
       }
@@ -298,7 +270,7 @@ $evergreen: #405545;
       bottom: 4px;
       right: 40px;
       font-size: 12px;
-      font-family: $MarkMedium;
+      font-family: markReg;
       letter-spacing: 0.5px;
       color: #595959;
     }
