@@ -29,10 +29,13 @@ p {
   justify-content: center;
   margin: 0 10px;
 }
-.home-hero-container img {
-  width: 100%;
+.home-hero-container .home-hero {
+  background-image: url(../images/holidayBanner.webp);
   height: 220px;
-  object-fit: contain;
+  width: 65%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .filters {

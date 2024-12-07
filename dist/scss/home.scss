@@ -33,10 +33,14 @@ $evergreen: #405545;
   align-items: center;
   justify-content: center;
   margin: 0 10px;
-  img {
-    width: 100%;
+
+  .home-hero {
+    background-image: url(../images/holidayBanner.webp);
     height: 220px;
-    object-fit: contain;
+    width: 65%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
