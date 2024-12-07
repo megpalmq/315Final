@@ -201,7 +201,12 @@ $evergreen: #405545;
       font-size: 19px;
       font-weight: bold;
     }
+    .cents {
+      font-size: 11px;
 
+      vertical-align: super;
+      line-height: 1;
+    }
     .before-price {
       text-decoration: line-through;
       color: #666;
@@ -235,6 +240,12 @@ $evergreen: #405545;
       font-size: 19px;
       font-weight: bold;
     }
+    .cents {
+      font-size: 11px;
+
+      vertical-align: super;
+      line-height: 1;
+    }
 
     .before-price {
       text-decoration: line-through;
@@ -255,6 +266,14 @@ $evergreen: #405545;
       width: 60%;
     }
   }
+  .before-price2 {
+    text-decoration: line-through;
+    color: #666;
+    font-size: 12px;
+    margin-top: 4px;
+    display: block;
+    padding-left: 8px;
+  }
   .coupon {
     display: flex;
     width: 90%;
@@ -263,7 +282,8 @@ $evergreen: #405545;
 
     p {
       margin-top: 15px;
-      padding-left: 10px;
+      padding-left: 7px;
+      font-size: 12px;
     }
     span {
       font-size: 9px;
@@ -273,6 +293,38 @@ $evergreen: #405545;
       width: 55px;
       height: 17px;
       border-radius: 0 10px 0 10px;
+      display: flex;
+      margin-left: 10px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+
+      p {
+        font-size: 10px;
+        padding-left: 3px;
+        padding-top: 4px;
+        padding-right: 5px;
+        margin: 0 auto;
+        color: white;
+        font-weight: 500;
+        font-family: markReg;
+      }
+    }
+  }
+
+  .sale {
+    display: flex;
+    width: 90%;
+    color: $red;
+    line-height: 10px;
+    p {
+      margin-top: 20px;
+      padding-left: 7px;
+      font-size: 12px;
+    }
+    .saleSticker {
+      background-color: $red;
+      width: px;
+      height: 20px;
       display: flex;
       margin-left: 10px;
       margin-top: 15px;
@@ -311,8 +363,11 @@ $evergreen: #405545;
   .shipping {
     display: flex;
     align-items: center;
-    margin-top: 14px;
+    margin-top: 20px;
     margin-left: 6px;
+    font-size: 15px;
+    font-weight: lighter;
+
     i {
       font-size: 20px;
       padding: 4px;
@@ -327,12 +382,13 @@ $evergreen: #405545;
     input {
       width: 20px;
       height: 20px;
-      border-radius: 0;
-      border: 2px solid #a0a0a0;
+      border: 2px solid #d6d3d3;
     }
     p {
-      font-size: 14px;
+      font-size: 12px;
+      margin-top: 6px;
       margin-left: 8px;
+      color: rgb(67, 109, 236);
     }
   }
   .buy-now {
@@ -349,6 +405,11 @@ $evergreen: #405545;
     cursor: pointer;
     font-weight: 600;
     position: absolute;
+    transition: border-color 0.3s ease;
+
+    &:hover {
+      border-color: #110a33;
+    }
   }
 }
 
@@ -365,51 +426,75 @@ $evergreen: #405545;
   font-family: markReg;
 }
 
+.ad-box {
+  background-image: url(../images/products/ad.avif);
+  width: 280px;
+  height: 735px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 // button classes
 .btn-silver {
   background-color: $silver;
+  padding-right: 3px;
 }
 .btn-gold {
   background-color: $gold;
+  padding-right: 3px;
 }
 .btn-slate {
   background-color: $slate;
+  padding-right: 3px;
 }
 .btn-black {
   background-color: black;
+  padding-right: 3px;
 }
 .btn-vinred {
   background-color: $vin-red;
+  padding-right: 3px;
 }
 .btn-oasis {
   background-color: $oasis;
+  padding-right: 3px;
 }
 .btn-sandstone {
   background-color: $sandstone;
+  padding-right: 3px;
 }
 .btn-navy {
   background-color: $navy;
+  padding-right: 3px;
 }
 .btn-white {
   background-color: $white;
+  border: black 1px solid;
 }
 .btn-gray {
   background-color: $gray;
+  padding-right: 3px;
 }
 .btn-green {
   background-color: $green;
+  padding-right: 3px;
 }
 .btn-rose {
   background-color: $rose;
+  padding-right: 3px;
 }
 .btn-red {
   background-color: $red-btn;
+  padding-right: 3px;
 }
 .btn-evergreen {
   background-color: $evergreen;
+  padding-right: 3px;
 }
 .btn-blue {
   background-color: #2907c1;
+  padding: 3px;
 }
 
 @media screen and (max-width: 991px) {

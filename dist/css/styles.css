@@ -190,6 +190,11 @@ p {
   font-size: 19px;
   font-weight: bold;
 }
+.item-box .item-price .cents {
+  font-size: 11px;
+  vertical-align: super;
+  line-height: 1;
+}
 .item-box .item-price .before-price {
   text-decoration: line-through;
   color: #666;
@@ -221,6 +226,11 @@ p {
   font-size: 19px;
   font-weight: bold;
 }
+.item-box .item-price2 .cents {
+  font-size: 11px;
+  vertical-align: super;
+  line-height: 1;
+}
 .item-box .item-price2 .before-price {
   text-decoration: line-through;
   color: #666;
@@ -238,6 +248,14 @@ p {
   color: #333333;
   width: 60%;
 }
+.item-box .before-price2 {
+  text-decoration: line-through;
+  color: #666;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+  padding-left: 8px;
+}
 .item-box .coupon {
   display: flex;
   width: 90%;
@@ -246,7 +264,8 @@ p {
 }
 .item-box .coupon p {
   margin-top: 15px;
-  padding-left: 10px;
+  padding-left: 7px;
+  font-size: 12px;
 }
 .item-box .coupon span {
   font-size: 9px;
@@ -262,6 +281,36 @@ p {
   margin-bottom: 15px;
 }
 .item-box .coupon .couponSticker p {
+  font-size: 10px;
+  padding-left: 3px;
+  padding-top: 4px;
+  padding-right: 5px;
+  margin: 0 auto;
+  color: white;
+  font-weight: 500;
+  font-family: markReg;
+}
+.item-box .sale {
+  display: flex;
+  width: 90%;
+  color: #c8102e;
+  line-height: 10px;
+}
+.item-box .sale p {
+  margin-top: 20px;
+  padding-left: 7px;
+  font-size: 12px;
+}
+.item-box .sale .saleSticker {
+  background-color: #c8102e;
+  width: px;
+  height: 20px;
+  display: flex;
+  margin-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.item-box .sale .saleSticker p {
   font-size: 10px;
   padding-left: 3px;
   padding-top: 4px;
@@ -291,8 +340,10 @@ p {
 .item-box .shipping {
   display: flex;
   align-items: center;
-  margin-top: 14px;
+  margin-top: 20px;
   margin-left: 6px;
+  font-size: 15px;
+  font-weight: lighter;
 }
 .item-box .shipping i {
   font-size: 20px;
@@ -308,12 +359,13 @@ p {
 .item-box .compare input {
   width: 20px;
   height: 20px;
-  border-radius: 0;
-  border: 2px solid #a0a0a0;
+  border: 2px solid #d6d3d3;
 }
 .item-box .compare p {
-  font-size: 14px;
+  font-size: 12px;
+  margin-top: 6px;
   margin-left: 8px;
+  color: rgb(67, 109, 236);
 }
 .item-box .buy-now {
   font-family: markReg;
@@ -329,6 +381,10 @@ p {
   cursor: pointer;
   font-weight: 600;
   position: absolute;
+  transition: border-color 0.3s ease;
+}
+.item-box .buy-now:hover {
+  border-color: #110a33;
 }
 
 .shopBtn {
@@ -344,64 +400,88 @@ p {
   font-family: markReg;
 }
 
+.ad-box {
+  background-image: url(../images/products/ad.avif);
+  width: 280px;
+  height: 735px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .btn-silver {
   background-color: #a3a7a8;
+  padding-right: 3px;
 }
 
 .btn-gold {
   background-color: #c4b8aa;
+  padding-right: 3px;
 }
 
 .btn-slate {
   background-color: #676260;
+  padding-right: 3px;
 }
 
 .btn-black {
   background-color: black;
+  padding-right: 3px;
 }
 
 .btn-vinred {
   background-color: #bb3a56;
+  padding-right: 3px;
 }
 
 .btn-oasis {
   background-color: #a4cfd3;
+  padding-right: 3px;
 }
 
 .btn-sandstone {
   background-color: #ddc7a5;
+  padding-right: 3px;
 }
 
 .btn-navy {
   background-color: #32425e;
+  padding-right: 3px;
 }
 
 .btn-white {
   background-color: #f3f3f3;
+  border: black 1px solid;
 }
 
 .btn-gray {
   background-color: #a9a9a6;
+  padding-right: 3px;
 }
 
 .btn-green {
   background-color: #a8bba2;
+  padding-right: 3px;
 }
 
 .btn-rose {
   background-color: #ffe7e8;
+  padding-right: 3px;
 }
 
 .btn-red {
   background-color: #ff0000;
+  padding-right: 3px;
 }
 
 .btn-evergreen {
   background-color: #405545;
+  padding-right: 3px;
 }
 
 .btn-blue {
   background-color: #2907c1;
+  padding: 3px;
 }
 
 @media screen and (max-width: 991px) {

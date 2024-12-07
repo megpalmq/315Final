@@ -172,12 +172,21 @@ function loadItems() {
   console.log("loadItems function called");
   console.log("productInfo:", productInfo);
 
+  const totalProducts = productInfo.Products.length;
+  const adIndex = 7;
   $.each(productInfo.Products, (idx, item) => {
+    if (idx === adIndex) {
+      $(".all-items-container").append(`
+         <div class="ad-box"></div>
+      `);
+    }
     let productHTML = `
       <div class="item-box">
         ${
           item.productBanner
-            ? `<div class="pbanner" style="background-color: ${item.productBannerColor}">${item.productBanner}</div>`
+            ? `<div class="pbanner" style="background-color: ${item.productBannerColor}; color: ${item.productBannerTextColor};">
+          ${item.productBanner}
+        </div>`
             : ""
         }
         <img src="images/Products/${item.image}" ${item.imagePosition} />
@@ -190,13 +199,19 @@ function loadItems() {
             <span>${item.price1}</span>
             <div class="before-price">${item.beforePrice}</div>
           </div>
-          <p>with Keurig® Starter Kit</p>
+          <p>${item.start}</p>
         </div>
-        <hr>
-        <div class="item-price2">
-          <span>${item.price2}</span>
+        <span>${item.line}</span>
+        <div class="item-price2 ">
+        
+          <span style="color: ${item.price2Color};">${item.price2}</span>
           <p>${item.discnt}</p>
         </div>
+        ${
+          item.beforePrice2
+            ? `<div class="before-price2">${item.beforePrice2}</div>`
+            : ""
+        }
     `;
 
     if (item.coupon && item.coupon.trim() !== "") {
@@ -206,6 +221,16 @@ function loadItems() {
             <p>COUPON</p>
           </div>
           <p>${item.coupon}</p>
+        </div>
+      `;
+    }
+    if (item.sale && item.sale.trim() !== "") {
+      productHTML += `
+        <div class="sale">
+          <div class="saleSticker">
+            <p>Sale</p>
+          </div>
+          <p>${item.sale}</p>
         </div>
       `;
     }
