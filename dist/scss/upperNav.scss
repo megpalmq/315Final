@@ -11,14 +11,43 @@
     font-family: markReg;
     font-weight: bold;
     font-size: 14px;
+
     span {
       text-decoration: underline;
     }
+
     .see {
       font-weight: lighter;
     }
+
     .gone {
       font-family: markReg;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 8px;
+
+    .centerInfo {
+      font-size: 10px;
+      text-align: center;
+
+      span {
+        font-size: 12px; // Adjust span font size
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 10px;
+
+    .centerInfo {
+      font-size: 8px;
+      line-height: 1.4;
+
+      span {
+        font-size: 10px; // Match font size
+      }
     }
   }
 }

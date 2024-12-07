@@ -768,7 +768,7 @@ nav ul .outlet img {
   text-decoration: none;
   color: #000;
   font-size: 19px;
-  font-family: "MarkOT-Medium", sans-serif;
+  font-family: markReg;
   z-index: 50;
   transition: ease 0.5s;
   padding: 4px 20px;
@@ -866,7 +866,7 @@ nav ul .outlet img {
 }
 @media screen and (max-width: 991px) {
   .nav-holder {
-    height: 120px;
+    height: 200px;
   }
   .nav-holder nav {
     display: none;
@@ -985,15 +985,43 @@ nav ul .outlet img {
   color: #ffffff;
   width: 100%;
 }
-between buttons .buttons-hero .button-link:hover {
+.buttons-hero .button-link:hover {
   transform: scale(1.05);
 }
-between buttons .buttons-hero .button-link:hover a {
+.buttons-hero .button-link:hover a {
   text-decoration: underline;
 }
 .buttons-hero .button-link:last-child {
   border-right: none;
   margin-right: 0;
+}
+@media screen and (max-width: 991px) {
+  .buttons-hero {
+    flex-direction: column;
+    align-items: center;
+  }
+  .buttons-hero .button-link {
+    width: 80%;
+    height: auto;
+    padding-top: 15px;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  .buttons-hero .button-link a {
+    font-size: 14px;
+  }
+  .buttons-hero .button-link:hover {
+    transform: scale(1.02);
+  }
+}
+@media screen and (max-width: 576px) {
+  .buttons-hero .button-link {
+    width: 90%;
+    font-size: 10px;
+  }
+  .buttons-hero .button-link a {
+    font-size: 12px;
+  }
 }
 
 @font-face {
@@ -1078,7 +1106,7 @@ between buttons .buttons-hero .button-link:hover a {
   margin-right: -2px;
   border: none;
   background-color: rgba(0, 0, 0, 0);
-  font-family: "MarkOT-Bold", sans-serif;
+  font-family: markReg;
   font-size: 18px;
   color: #3b2b2f;
   cursor: pointer;
@@ -1092,7 +1120,7 @@ between buttons .buttons-hero .button-link:hover a {
   margin-left: -2px;
   border: none;
   background-color: rgba(0, 0, 0, 0);
-  font-family: "MarkOT-Bold", sans-serif;
+  font-family: markReg;
   font-size: 18px;
   color: #3b2b2f;
   cursor: pointer;
@@ -1105,7 +1133,7 @@ between buttons .buttons-hero .button-link:hover a {
   height: 40px;
   border-radius: 3px;
   border: 2px solid #acacac;
-  font-family: "MarkOT-Reg", sans-serif;
+  font-family: markReg;
   font-size: 16px;
   padding: 13px;
   margin-top: 10px;
@@ -1114,7 +1142,7 @@ between buttons .buttons-hero .button-link:hover a {
   margin-left: 154px;
 }
 #modal-inject .modal-wrapper .modal-content .sign-titles {
-  font-family: "MarkOT-Medium", sans-serif;
+  font-family: markReg;
   font-size: 28px;
   margin-bottom: 16px;
   text-align: center;
@@ -1203,7 +1231,7 @@ between buttons .buttons-hero .button-link:hover a {
   height: 6px;
   background-color: #3b2b2f;
   color: #fff;
-  font-family: "MarkOT-Medium", sans-serif;
+  font-family: markReg;
   text-decoration: none;
   font-size: 18px;
   border-radius: 50px;
@@ -1226,7 +1254,7 @@ between buttons .buttons-hero .button-link:hover a {
   background-color: #322ad4;
   border-radius: 5px;
   cursor: pointer;
-  font-family: "MarkOT-Bold", sans-serif;
+  font-family: markReg;
 }
 #modal-inject .modal-wrapper .modal-content span:hover {
   background-color: #2a23a5;
@@ -1261,7 +1289,7 @@ between buttons .buttons-hero .button-link:hover a {
   justify-content: center;
   font-size: 20px;
   color: #151515;
-  font-family: "MarkOT-Bold", sans-serif;
+  font-family: markReg;
   width: 32px;
   height: 32px;
   left: 0;
@@ -1289,7 +1317,7 @@ between buttons .buttons-hero .button-link:hover a {
   margin-right: -2px;
   border: none;
   background-color: rgba(0, 0, 0, 0);
-  font-family: "MarkOT-Bold", sans-serif;
+  font-family: markReg;
   font-size: 18px;
   color: #3b2b2f;
   cursor: pointer;
@@ -1303,7 +1331,7 @@ between buttons .buttons-hero .button-link:hover a {
   margin-left: -2px;
   border: none;
   background-color: rgba(0, 0, 0, 0);
-  font-family: "MarkOT-Bold", sans-serif;
+  font-family: markReg;
   font-size: 18px;
   color: #3b2b2f;
   cursor: pointer;
@@ -1316,7 +1344,7 @@ between buttons .buttons-hero .button-link:hover a {
   height: 40px;
   border-radius: 3px;
   border: 2px solid #acacac;
-  font-family: "MarkOT-Reg", sans-serif;
+  font-family: markReg;
   font-size: 16px;
   padding: 13px;
   margin-top: 10px;
@@ -1325,7 +1353,7 @@ between buttons .buttons-hero .button-link:hover a {
   margin-left: 154px;
 }
 #modal-inject .modal-wrapper2 .modal-content .sign-titles {
-  font-family: "MarkOT-Medium", sans-serif;
+  font-family: markReg;
   font-size: 28px;
   margin-bottom: 16px;
   text-align: center;
@@ -1414,7 +1442,7 @@ between buttons .buttons-hero .button-link:hover a {
   height: 6px;
   background-color: #3b2b2f;
   color: #fff;
-  font-family: "MarkOT-Medium", sans-serif;
+  font-family: markReg;
   text-decoration: none;
   font-size: 18px;
   border-radius: 50px;
@@ -1437,7 +1465,7 @@ between buttons .buttons-hero .button-link:hover a {
   background-color: #322ad4;
   border-radius: 5px;
   cursor: pointer;
-  font-family: "MarkOT-Bold", sans-serif;
+  font-family: markReg;
 }
 #modal-inject .modal-wrapper2 .modal-content span:hover {
   background-color: #2a23a5;
@@ -1472,7 +1500,7 @@ between buttons .buttons-hero .button-link:hover a {
   justify-content: center;
   font-size: 20px;
   color: #151515;
-  font-family: "MarkOT-Bold", sans-serif;
+  font-family: markReg;
   width: 32px;
   height: 32px;
   left: 0;
@@ -1515,7 +1543,7 @@ between buttons .buttons-hero .button-link:hover a {
 #modal-inject .modal-wrapper3 .modal-content .login-button {
   background-color: #3b2b2f;
   color: #fff;
-  font-family: "MarkOT-Medium", sans-serif;
+  font-family: markReg;
   text-decoration: none;
   font-size: 18px;
   border-radius: 50px;
@@ -1534,6 +1562,170 @@ between buttons .buttons-hero .button-link:hover a {
   background-color: #2a1f22;
 }
 
+@media (max-width: 1200px) {
+  .modal-wrapper,
+  .modal-wrapper2,
+  .modal-wrapper3 {
+    width: 280px;
+    min-height: 500px;
+    right: 10px;
+    top: 40px;
+    padding: 15px;
+    margin-left: 10px;
+  }
+  .modal-pointer {
+    margin-left: 90%;
+  }
+  .x-button {
+    margin-left: 10px;
+  }
+  .modal-content {
+    margin-top: 40px;
+  }
+  .modal-content .login-signup-btns .loginToggle,
+  .modal-content .login-signup-btns .signupToggle {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .modal-wrapper,
+  .modal-wrapper2,
+  .modal-wrapper3 {
+    width: 250px;
+    min-height: 450px;
+    top: 30px;
+    padding: 12px;
+  }
+  .modal-pointer {
+    margin-left: 80%;
+  }
+  .x-button {
+    margin-left: 5px;
+  }
+  .modal-content {
+    margin-top: 30px;
+  }
+  .modal-content .login-signup-btns .loginToggle,
+  .modal-content .login-signup-btns .signupToggle {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .modal-content input {
+    width: 100%;
+  }
+  .modal-content .sign-titles {
+    font-size: 20px;
+  }
+  .modal-content .remember-box {
+    width: 100%;
+    margin-top: 8px;
+  }
+  .modal-content .why-sign-in {
+    width: 100%;
+  }
+  .modal-content .bottom-btns {
+    margin-right: 0;
+  }
+  .modal-content .login-button {
+    width: 100%;
+  }
+  .modal-content span {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .modal-wrapper,
+  .modal-wrapper2,
+  .modal-wrapper3 {
+    width: 220px;
+    min-height: 400px;
+    top: 20px;
+    padding: 10px;
+  }
+  .modal-pointer {
+    margin-left: 70%;
+  }
+  .x-button {
+    margin-left: 5px;
+  }
+  .modal-content {
+    margin-top: 20px;
+  }
+  .modal-content .login-signup-btns .loginToggle,
+  .modal-content .login-signup-btns .signupToggle {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .modal-content input {
+    width: 100%;
+  }
+  .modal-content .sign-titles {
+    font-size: 18px;
+  }
+  .modal-content .remember-box {
+    width: 100%;
+    margin-top: 6px;
+  }
+  .modal-content .why-sign-in {
+    width: 100%;
+  }
+  .modal-content .bottom-btns {
+    margin-right: 0;
+  }
+  .modal-content .login-button {
+    width: 100%;
+  }
+  .modal-content span {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .modal-wrapper,
+  .modal-wrapper2,
+  .modal-wrapper3 {
+    width: 200px;
+    min-height: 350px;
+    top: 10px;
+    padding: 8px;
+    margin-right: -150px;
+  }
+  .modal-pointer {
+    margin-left: 60%;
+  }
+  .x-button {
+    margin-left: 5px;
+  }
+  .modal-content {
+    margin-top: 15px;
+  }
+  .modal-content .login-signup-btns .loginToggle,
+  .modal-content .login-signup-btns .signupToggle {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .modal-content input {
+    width: 100%;
+  }
+  .modal-content .sign-titles {
+    font-size: 16px;
+  }
+  .modal-content .remember-box {
+    width: 100%;
+    margin-top: 4px;
+  }
+  .modal-content .why-sign-in {
+    width: 100%;
+  }
+  .modal-content .bottom-btns {
+    margin-right: 0;
+  }
+  .modal-content .login-button {
+    width: 100%;
+  }
+  .modal-content span {
+    width: 100%;
+  }
+}
 @font-face {
   font-family: markReg;
   src: url(../fonts/MarkOT-Medium.ttf);
@@ -1688,6 +1880,76 @@ between buttons .buttons-hero .button-link:hover a {
   padding-bottom: 40px;
 }
 
+@media screen and (max-width: 991px) {
+  .base-footer {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  .base-footer .footer-desc,
+  .base-footer .socials {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-links .col1,
+  .footer-links .col2,
+  .footer-links .col3,
+  .footer-links .col4 {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .footer-links .col1 img,
+  .footer-links .col2 img,
+  .footer-links .col3 img,
+  .footer-links .col4 img {
+    width: 100px;
+  }
+  .footer-links .col1 p,
+  .footer-links .col2 p,
+  .footer-links .col3 p,
+  .footer-links .col4 p {
+    font-size: 16px;
+  }
+  .footer-links .col1 a,
+  .footer-links .col2 a,
+  .footer-links .col3 a,
+  .footer-links .col4 a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .base-footer {
+    padding: 10px;
+  }
+  .base-footer .socials {
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  .footer-links .col1 p,
+  .footer-links .col2 p,
+  .footer-links .col3 p,
+  .footer-links .col4 p {
+    font-size: 14px;
+  }
+  .footer-links .col1 a,
+  .footer-links .col2 a,
+  .footer-links .col3 a,
+  .footer-links .col4 a {
+    font-size: 12px;
+  }
+  .bottom-footer p {
+    font-size: 10px;
+  }
+}
 @font-face {
   font-family: markReg;
   src: url(../fonts/MarkOT-Medium.ttf);
@@ -1735,7 +1997,7 @@ between buttons .buttons-hero .button-link:hover a {
 }
 .cart-sum h1 {
   font-weight: 100;
-  font-size: 20px;
+  font-size: 30px;
   font-family: markReg;
 }
 .cart-sum .cart-sub {
@@ -1743,9 +2005,11 @@ between buttons .buttons-hero .button-link:hover a {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px dashed #595959;
+  font-size: 16px;
 }
 .cart-sum .cart-sub .real-cart-sub {
   padding-right: 10px;
+  font-size: 16px;
 }
 .cart-sum .savings {
   display: flex;
@@ -1787,6 +2051,7 @@ between buttons .buttons-hero .button-link:hover a {
   margin-left: 16px;
   padding: 10px 20px;
   background-color: #f1be48;
+  font-family: markReg;
   text-decoration: none;
   color: #250000;
   transition: ease 0.3s;
@@ -1940,6 +2205,93 @@ between buttons .buttons-hero .button-link:hover a {
   color: #595959;
 }
 
+@media screen and (max-width: 991px) {
+  .cart-info-container {
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+  .cart-info-container .cart-box {
+    width: 100%;
+    height: 100%;
+    padding: 60px;
+  }
+  .cart-info-container .cart-sum {
+    width: 100%;
+    margin: 10px 0;
+    padding: 60px;
+  }
+  .cart-info-container .cart-container {
+    width: 90%;
+    margin: 20px 0;
+  }
+  .cart-info-container .cart-box {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cart-info-container .cart-box .cart-main {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .cart-info-container .cart-box .points {
+    width: 0%;
+    padding-right: 10px;
+  }
+  .cart-info-container .cart-box .points h2 {
+    margin-left: -200px;
+  }
+  .cart-info-container .cart-box .qty {
+    bottom: auto;
+    right: 0;
+    margin-top: 10px;
+  }
+  .cart-info-container .cart-box .cart-subtotal {
+    position: relative;
+    right: 0;
+    margin-top: 10px;
+  }
+  .checkout-button {
+    width: 70%;
+    bottom: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .shopping-cart-hero h1 {
+    font-size: 18px;
+  }
+  .cart-info-container {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .cart-sum {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+  .cart-container {
+    width: 100%;
+  }
+  .cart-box {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  .cart-box .cart-main {
+    flex-direction: column;
+  }
+  .cart-box .points {
+    width: 100%;
+  }
+  .cart-box .x-btn {
+    position: static;
+    padding-top: 10px;
+  }
+}
 .upperNav {
   display: flex;
   width: 100%;
@@ -1962,4 +2314,28 @@ between buttons .buttons-hero .button-link:hover a {
 }
 .upperNav .centerInfo .gone {
   font-family: markReg;
+}
+@media (max-width: 768px) {
+  .upperNav {
+    padding: 8px;
+  }
+  .upperNav .centerInfo {
+    font-size: 10px;
+    text-align: center;
+  }
+  .upperNav .centerInfo span {
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .upperNav {
+    padding: 10px;
+  }
+  .upperNav .centerInfo {
+    font-size: 8px;
+    line-height: 1.4;
+  }
+  .upperNav .centerInfo span {
+    font-size: 10px;
+  }
 }

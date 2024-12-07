@@ -291,7 +291,7 @@ nav {
     text-decoration: none;
     color: #000;
     font-size: 19px;
-    font-family: $MarkMedium;
+    font-family: markReg;
     z-index: 50;
     transition: ease 0.5s;
     padding: 4px 20px;
@@ -431,7 +431,7 @@ nav {
 
 @media screen and (max-width: 991px) {
   .nav-holder {
-    height: 120px;
+    height: 200px;
     nav {
       display: none;
     }
