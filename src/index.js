@@ -154,7 +154,7 @@ function loadCart() {
           <p class="remove-item" data-index="${idx}">X</p>
         </div>
         <div class="cart-main">
-          <img src="file:///C:/Users/megan/OneDrive%20-%20Indiana%20University/N315/315Finallyyy/dist/images/Products/prod1.webp" />
+          <img src="images/Products/${item.image}" ${item.imagePosition} />
           <div class="cart-name">
             <p>Keurig®</p>
             <h3 class="cart-title">${item.title}</h3>
