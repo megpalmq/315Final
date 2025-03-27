@@ -213,7 +213,7 @@ function loadItems() {
         </div>`
             : ""
         }
-        <img src="images/Products/${item.image}" ${item.imagePosition} />
+        <img src="images/products/${item.image}" ${item.imagePosition} />
         <div class="colorbtns">
           ${item.colors}
         </div>
