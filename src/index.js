@@ -154,7 +154,7 @@ function loadCart() {
           <p class="remove-item" data-index="${idx}">X</p>
         </div>
         <div class="cart-main">
-          <img src="images/products/${item.image}" ${item.imagePosition} />
+          <img src="images/Products/${item.image}" ${item.imagePosition} />
           <div class="cart-name">
             <p>Keurig®</p>
             <h3 class="cart-title">${item.title}</h3>
@@ -213,7 +213,7 @@ function loadItems() {
         </div>`
             : ""
         }
-        <img src="images/products/${item.image}" ${item.imagePosition} />
+        <img src="images/Products/${item.image}" ${item.imagePosition} />
         <div class="colorbtns">
           ${item.colors}
         </div>
